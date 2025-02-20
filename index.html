@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Test Page</title>
+</head>
+<body>
+    <h1>Socket Test Page</h1>
+    <script>
+        const socket = new WebSocket("ws://localhost:8080");
+
+        socket.onopen = () =>{
+            console.log("Connected to server");
+            socket.send("Hello Server");
+        }
+
+        socket.onmessage = (event)=>{
+            console.log("Recieved: ", event.data);
+        }
+
+        socket.onclose = ()=>{
+            console.log("Connection Closed")
+        }
+    </script>
+</body>
+</html>
