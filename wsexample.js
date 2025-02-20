@@ -1,1 +1,0 @@
-const { rmSync } = require("fs");
