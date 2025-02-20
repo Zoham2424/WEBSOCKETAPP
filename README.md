@@ -1,11 +1,11 @@
-This is a simple authentication system built with Node.js, Express, MongoDB, and Passport.js. It supports user registration, login, password hashing, protected routes, and logout functionality.
+This is a websocket app that will talk to Chatgpt
 
 ## Requirements
 
 
-- npm 
+- npm express
+- npm socket.io
 
 # 1. Clone the Repository
-# 2. Set up mongo
-# 3. Install Nodes
-# 4. Run app (app.js)
+# 2. Install Nodes
+# 3. Run app (app.js)
