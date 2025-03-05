@@ -2,7 +2,7 @@ const { Socket } = require("dgram");
 const express = require("express");
 const http = require("http");
 const {Server} = require("socket.io");
-
+const OpenAI = require("openai");
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
@@ -40,7 +40,7 @@ server.listen(3000, ()=>{
 })
 
 const openai = new OpenAI({
-    apiKey: "  ",
+    apiKey: " ",
 });
 
 async function getCompletion() {
