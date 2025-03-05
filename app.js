@@ -1,4 +1,3 @@
-//example using socket.io
 const { Socket } = require("dgram");
 const express = require("express");
 const http = require("http");
@@ -41,7 +40,7 @@ server.listen(3000, ()=>{
 })
 
 const openai = new OpenAI({
-    apiKey: "",
+    apiKey: "  ",
 });
 
 async function getCompletion() {
